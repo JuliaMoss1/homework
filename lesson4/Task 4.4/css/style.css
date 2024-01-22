@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    display: flex; 
+    justify-content: center;
+
+}
+
+.white {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    background-color: white;
+    position: relative;
+    margin: 150px; 
+}
+
+.animated-block {
+    width: 100px;
+    height: 100px;
+   
+    animation: mySuperAnimation 4s ease-in-out 0.2s infinite normal both;
+}
+
+@keyframes mySuperAnimation {
+    0%, 100% {transform: translate(0, 0); background-color: red;}
+    25% {transform: translate(0,200px); background-color: blue;}
+    50% {transform: translate(200px, 200px);background-color: green;}
+    75% {transform: translate(200px, 0); background-color: yellow;}
+}

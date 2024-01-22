@@ -1,0 +1,52 @@
+.my {
+    color: rgba(54, 235, 54, 0.774);
+}
+
+
+a[href^='https://'] {
+    color: #f00;
+}
+
+
+a[href^='http://'] {
+    color: #ff8d00;
+}
+
+
+ul + p {
+    font-size: 26px;
+}
+
+
+h1, h2 {
+   border: 1px solid #067b09;
+   border-radius: 1dvh;
+}
+
+
+
+
+
+
+.text-box > h3:first-child {
+    color: pink;
+} 
+
+
+#greycol {
+    color: grey;
+}
+
+
+.text-box  div > p {
+    color: red;
+}
+
+.text-box > p:nth-child(7) {
+    color: green;
+}
+
+
+.yellow {
+    color: yellow;
+}

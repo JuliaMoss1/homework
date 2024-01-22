@@ -1,0 +1,52 @@
+.parent {
+    width: 700px;
+    height: 600px;
+    background-color: #0d5825; 
+}
+
+q {
+    color: white;
+    font-size: 25px;
+    font-family: "Arial";
+    text-align: center;
+    padding-top: 60px;
+    display: block;
+}  
+
+p {
+    color: white;
+    font-size: 25px;
+    font-family: "Arial";
+    font-style: italic;
+    text-align: center;
+    margin-top: 5px;
+}
+
+img {
+    width: 150px; 
+}
+img:hover { 
+    transform: translateY(-20px);
+    transition-duration: 1s; 
+}
+
+.firstCart {
+    position: relative;
+    left: 160px;
+    bottom: 50px;
+    transform: rotate(-30deg);
+}
+
+.secondCart {
+    position: absolute;
+    left: 270px;
+    top: 250px;
+    transform: rotate(-10deg);
+}
+
+.cart {
+    position: absolute;
+    left: 330px;
+    top: 270px;
+    transform: rotate(12deg);  
+}

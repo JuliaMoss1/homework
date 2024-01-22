@@ -1,0 +1,26 @@
+.first, .second, .third {
+    width: 250px;
+    height: 250px;
+    position: absolute;  
+}
+
+.first {
+    z-index: 1;
+    top: 50px;
+    left: 50px;
+    background-color: rgb(231, 101, 123);
+}
+
+.second {
+    z-index: 2;
+    top: 360px;
+    left: 360px;
+    background-color: rgb(88, 235, 137);
+}
+
+.third {
+    z-index: 3;
+    top: 200px;
+    left: 200px;
+    background-color: rgb(121, 109, 230);
+}
