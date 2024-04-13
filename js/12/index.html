@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework12</title>
+    <link rel="stylesheet" href="./Reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>БАБКІН КІОСК</h1>
+        <img src="./img/babka.jpg" alt="babka" style="height: 300px;">
+    </header>
+    
+    <ul class="vitrina">
+        <li class="pivo">
+           <div id="pivo">Pivo: 0 </div>
+           <img src="./img/pivo.png" alt="pivo" style="height: 200px;">
+        </li> 
+        <li class="chips">
+            <div id="chips">Chips: 0</div>
+            <img src="./img/chips.png" alt="chips" style="height: 200px;">
+        </li>
+        <li class="sigi">
+            <div id="sigi">Sigi: 0</div>
+            <img src="./img/sigі.png" alt="sigi" style="height: 160px;">
+        </li>
+    </ul>
+  
+    <section id="vubir">
+        <select id="товар">
+            <option>пиво</option>
+            <option>чіпси</option>
+            <option>сіги</option>
+        </select>
+        <input type="number" id="кількість"  placeholder="Введи кількість">
+        <input type="number" id="кошти" placeholder="Введи кошти">
+        <button onclick="купитиТовар()">Купити</button>
+    </section>
+
+    <div id="end">
+        <img src="./img/зачинено.png" alt="зачинено">
+    </div>
+
+    <footer><p>така домашка &copy; 2024</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>  

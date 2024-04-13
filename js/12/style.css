@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Mulish";
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 30px;
+  color: white;
+  
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  background-color: rgb(105, 99, 99);
+  margin: 0 0 30px 0;
+}
+
+header img {
+  position: relative;
+}
+
+.vitrina {
+  display: flex;
+  border-radius: 10px;
+  gap: 40px;
+  padding: 10px;
+}
+
+.pivo, .chips, .sigi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  row-gap: 20px;
+  height: 290px;
+  width: 260px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px 1px rgb(0 0 0 / 30%);
+}
+
+.sigi {
+  row-gap: 50px;
+}
+.pivo:hover, .chips:hover, .sigi:hover, button:hover {
+  box-shadow: 5px 5px 20px 1px rgba(145, 228, 109, 0.469);
+}
+
+
+#vubir {
+  display: flex;
+  gap: 20px;
+  margin: 70px;
+}
+
+button, #товар{
+  color: white;
+  width: 100px;
+  background-color: rgb(27, 172, 136);
+  border: none;
+  border-radius: 3px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  color: white;
+  background-color: rgb(105, 99, 99);
+}
+
+#end {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  border: 1px white solid;
+  border-radius: 10px;
+  overflow: hidden;
+  visibility: hidden;
+}
