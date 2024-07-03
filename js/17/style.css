@@ -1,0 +1,58 @@
+.traffic-light, .trafficLight, #button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px; 
+  width: 80px;
+  height: 300px;
+  background-color:#615c5c;
+  border: solid 2px black;
+  border-radius: 30px;
+
+}
+
+.trafficLight {
+  height: 200px;
+}
+
+.light {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: gray;
+  border: solid 2px black;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+#button {
+  height: 40px;
+  background-color:orange;
+  border-radius: 20px;
+  width: 100px;
+  border: solid 2px black;
+}
+
+#button:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+#stolb{
+  width: 20px;
+  height: 50px;
+  background-color: grey;
+  position: relative;
+  left: 40px;
+  border: solid 1px black;
+}
