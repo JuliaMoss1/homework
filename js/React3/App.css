@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  flex-direction: column; 
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  
+}
+
+
+.clockFace {
+  width: 400px;
+  height: 400px;
+  margin: 80px;
+  background-image: url('./images/ClockFace.png');
+}
+.clockHour {
+  position: absolute;
+  width: 400px; 
+  height: 400px;
+  background-image: url('./images/ClockFace_H.png');
+}
+.clockMinute {
+  position: absolute;
+  width: 400px; 
+  height: 400px;
+  background-image: url('./images/ClockFace_M.png');
+}
+.clockSecond {
+  position: absolute;
+  width: 400px; 
+  height: 400px;
+  background-image: url('./images/ClockFace_S.png');
+}
+
+.Phonebook, .Task {
+  padding: 15px;
+  background-color: rgb(203, 236, 236);
+  border: 2px solid rgba(188, 175, 175, 0.295);
+  border-radius: 7px;
+}
