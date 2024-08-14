@@ -81,7 +81,7 @@ const TimerContainer = ({ seconds, refresh, render }) => {
   
   useEffect(() => {
     const updateTimer = () => {
-      const updateSeconds = seconds - Math.floor((Date.now() - mountTimeRef.current) / 1000);
+      const updateSeconds = Math.max(seconds - Math.floor((Date.now() - mountTimeRef.current) / 1000),0);
       setTime(updateSeconds);
     };
 
