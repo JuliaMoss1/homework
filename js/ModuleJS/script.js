@@ -26,8 +26,8 @@ function getGQL(endpoint) {
   return gql;
 }
 
-const endpoint= "http://shop-roles.node.ed.asmer.org.ua/";
-const gql = getGQL(endpoint + "graphql");
+//const endpoint= "http://shop-roles.node.ed.asmer.org.ua/";
+//const gql = getGQL(endpoint + "graphql");
 
 
 const actionRootCategories = () => 
