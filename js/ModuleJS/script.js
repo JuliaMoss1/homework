@@ -411,7 +411,7 @@ function drawCart(){
       inputCount.onchange = () => store.dispatch(actionCartSet(good, parseInt(inputCount.value, 10)));
 
       const buttonDel= document.createElement("button");
-      buttonDel.innerHTML = '&#128465';
+      buttonDel.innerHTML = '\u{1F5D1}';
       divCard.append(buttonDel);
       buttonDel.onclick = () => store.dispatch(actionCartDel(good));
     };
@@ -566,7 +566,7 @@ function Password(parent, open) {
   parent.appendChild(this.input);
 
   this.toggleButton = document.createElement('button');
-  this.toggleButton.textContent = '👁';
+  this.toggleButton.textContent = '\u{1F441}';
   parent.appendChild(this.toggleButton);
 
   this.input.addEventListener('input', () => {
@@ -850,7 +850,7 @@ function headerState() {
     buttonLogout.style.display = "inline-block";
     buttonHistory.style.display = "inline-block";
     
-    cartIcon.innerHTML = `<a href="#/cart">🛒</a>${cartItemCount}<br>
+    cartIcon.innerHTML = `<a href="#/cart">\u{1F6D2}</a>${cartItemCount}<br>
                           ${store.getState().auth.payload.sub.login}`;
   } 
   else {
@@ -858,7 +858,7 @@ function headerState() {
     buttonLogin.style.display = "inline-block";
     buttonLogout.style.display = "none";
     buttonHistory.style.display = "none";
-    cartIcon.innerHTML = `<a href="#/cart">🛒</a>${cartItemCount}<br>`;
+    cartIcon.innerHTML = `<a href="#/cart">\u{1F6D2}</a>${cartItemCount}<br>`;
   }
 };
 store.subscribe(headerState);
