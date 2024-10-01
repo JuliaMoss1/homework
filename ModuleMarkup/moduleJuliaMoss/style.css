@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.cdnfonts.com/css/freestyle-script');
+
+* {
+box-sizing: border-box;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+body {
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Mulish";
+}
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background: white;
+}
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 150px;
+}
+.main-navhamburger-menu {
+  display: flex;
+  align-items: center;
+  height: 30px; 
+}
+#menu__toggle {
+  opacity: 0;
+}
+.menu__box {
+  display: flex;
+  gap: 20px;
+}
+.menu__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(93, 87, 87);
+}
+.menu__item:hover {
+  color: #5b6ceb;
+}
+.menu__item::after {
+  content: "";
+  position: absolute;
+  top: 62px; 
+  height: 1.5px; 
+  width: 0;
+  background-color: #5b6ceb;
+  transition: width 0.5s ease-in-out; 
+}
+.menu__item:hover::after  {
+  width: 30px;
+}
+.main { 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sectionForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 100px 0;
+  background: url("./image/bg-01.jpg")center / cover no-repeat;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color:rgb(77 92 221 / 76%);
+}
+.sectionFormContent {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  gap: 90px;
+  padding: 0 0 0 40px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 390px;
+  width: 300px;
+  padding: 30px;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 5px 5px 20px 1px rgb(0 0 0 / 30%);
+  gap: 10px;
+  font-family: "Mulish";
+}
+.sectionFormTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 400px;
+  padding: 60px 0;
+  gap: 30px;
+}
+#yourName, #tel, #yourClass {
+  height: 50px;
+  width: 240px;
+  padding: 10px;
+  background-color:#f2f2f2;
+  border: 0px;
+  border-radius: 7px;
+  color: rgb(154, 147, 147);
+  font-size: 16px;
+}
+::placeholder {
+  color: rgb(203, 201, 201);
+  font-size: 16px;
+}
+.titleForm {
+  padding: 10px 0;
+  text-align: left;
+}
+#submit {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: #5b6ceb;
+  border: 0;
+  border-radius: 7px;
+  width: 170px;
+  height: 50px;
+  padding: 10px;
+  margin-top: 20px;
+  position: relative;
+  left: 70px;
+  bottom: 5px;
+  box-shadow: 4px 4px 15px 0px rgb(0 0 0 / 30%);
+}
+.titleContent {
+  color: white;
+  font-size: 38px;
+  line-height: 65px;
+  font-family: "Mulish"; 
+  font-weight: 750;
+}
+.freeFond {
+  color: white;
+  font-family: 'Freestyle Script', sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+}
+#submit:hover, .cardContent button:hover {
+  background-color: #b679f8;
+  box-shadow: inset -5px -5px 7px 0px rgba(79, 79, 83, 0.652);;
+}
+
+/* стили для второй сексии*/
+.programSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 125px 15px 170px;
+}
+
+h2 {
+  color: #5b6ceb;
+  font-size: 30px;
+  font-family: "Mulish"; 
+  font-weight: 750;
+}
+.ourClasses {
+  color: #56575c;
+  font-size: 40px;
+  font-family: 'Freestyle Script', sans-serif;
+  font-weight: 100;
+}
+.programCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-content: center;
+  padding: 30px 0;
+}
+.classCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 570px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 0px rgb(0 0 0 / 15%);
+  overflow: hidden;
+}
+.classCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.textCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 30px;
+  font-family: "Mulish";
+}
+.textCard strong {
+  font-size: 18px;
+  font-weight: 750;
+  color: #6c6d74;
+  line-height: 25px;
+}
+.textCard p {
+  line-height: 25px;
+  font-size: 16px;
+  color: #6c6d74;
+}
+.textCard a{
+  color: #9e9ea8;
+}
+.textCard a:hover {
+  color: #5b6ceb;
+}
+/*стили для третьей секции*/
+.imageSectionConteiner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  flex-basis:25% ;
+}
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.image-wrapper:hover img {
+  transform: scale(1.1);
+}
+.overlayImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(77 92 221 / 76%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.image-wrapper:hover .overlayImg {
+  opacity: 1;
+}
+.icon {
+  color: #fff;
+  font-size: 50px;
+}
+/*стили для сексии со слайдером*/
+.aboutUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 125px 0px;
+}
+.aboutText, .slider {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+  flex: 1 1 50%;
+  max-width: 570px;
+  justify-items: center;
+  justify-content: center;
+}
+.aboutText p {
+  line-height: 24px;
+  font-size: 16px;
+  color: #65666c;
+  font-family: "Mulish";
+}
+.carousel {
+  box-shadow: 5px 5px 20px 0px rgb(0 0 0 / 30%);
+  border-radius: 10px;
+}
+.w-100 {
+  border-radius: 10px;
+}
+.carousel-control-next {
+  width: auto;
+  right: -5%;
+  opacity: 2;
+}
+.carousel-control-prev {
+  width: auto;
+  left: -5%;
+  opacity: 2;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-image: url("./image/left.png");
+  background-color: white;
+  background-size: 50%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 5px 5px 20px 0px rgb(0 0 0 / 30%);
+}
+.carousel-control-next-icon {
+  background-image: url("./image/right.png");
+  background-size: 48%;
+}
+
+/*стили для инфо-секции*/
+.infoSection {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 125px 15px;
+  background: url("./image/bg-02.jpg")center / cover no-repeat;
+  color: white;
+  font-family: "Mulish";
+}
+.infoConteiner {
+  display: flex;
+  z-index: 2;
+}
+.infoList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 65px;
+  column-gap: 30px;
+  justify-content: center;
+  text-align: center;
+}
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 270px;
+  gap: 20px;
+  line-height: 25px; 
+}
+.infoIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border: #fff solid 2.5px;
+  border-radius: 50%;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 750; 
+  max-width: 200px;
+}
+/*стилі для секшенКард*/
+.sectionCard {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: url("./image/bg-03.jpg")no-repeat right bottom;
+}
+.cardList {
+  display: flex;
+  justify-content: center;
+  padding: 100px 15px;
+  gap: 30px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px 0px rgb(0 0 0 / 15%);
+  overflow: hidden;
+}
+.cardHeader {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  color: white;
+  background-color: #5b6ceb;
+  font-size: 30px;
+}
+.cardHeader span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  position: relative;
+  left: 15px;
+}
+.cardHeader h5 {
+  position: relative;
+  left: 25px;
+  font-size: 70px;
+  font-weight: 800;
+}
+.cardHeader h3 {
+  position: relative;
+  top: 15px;
+  left: 30px;
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 70px;
+  gap: 40px;
+  text-align: center;
+}
+.cardContent h6 {
+  color: #65666c;
+  font-size: 18px;
+}
+.cardContent h6 > hr {
+  width: 50%;
+  position: relative;
+  left: 25%;
+  top: 8px;
+}
+.cardContent button {
+  color: white;
+  text-align: center;
+  width: 170px;
+  height: 50px;
+  background-color: #5b6ceb;
+  border: 0;
+  border-radius: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: white;
+  background-color: #5b6ceb;  
+}
+.footerWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 15px;
+  gap: 50px;
+  font-size: 16px;
+  max-width: 1200px;
+}
+.footerConteiner {
+  display: flex;
+  justify-items: center;
+  gap: 100px;
+}
+
+.aboutFooter {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  gap: 30px;
+  line-height: 25px;
+}
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  gap: 30px;
+}
+.address {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 40px;
+}
+.icons {
+  display: flex;
+  width: 200px;
+  gap: 20px;
+}
+.geo, .email, .tel, .website {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.tels, .add {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+a {
+  color: white;
+}
+.footerFooter {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #9e9ea8;
+  background-color: #5463d8;
+  height: 100px;
+}
+
+/* Стилі для середніх екранів (максимум 991 пікселів) */
+@media (max-width: 992px) {
+  h2 {
+    text-transform: uppercase;
+  }
+  .sectionFormContent {
+    gap: 60px;
+  }
+  .freeFond {
+    line-height: 35px;
+  }
+  .cardList {
+    flex-wrap: wrap;
+    padding: 50px 15px;
+  }
+  .footerConteiner {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+/* Стилі для маленьких екранів (максимум 767 пікселів) */
+@media (max-width: 768px) {
+  .logo {
+    justify-content: space-between;
+    padding:0 20px;
+  }
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #5b6ceb;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    flex-direction: column;
+    position: absolute;
+    visibility: hidden;
+    top: -100%;
+    width: 100%;
+    padding: 23px 0;
+    z-index: 3;
+    text-align: center;
+    background-color: white;
+    gap: 15px;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    top: 99px;
+    right: 0;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: .25s;
+  }
+  .menu__box {
+    transition-duration: .25s;
+  }
+  .menu__item {
+    transition-duration: .25s;
+  }
+  .menu__item::after {
+    position: relative;
+    top: 3px;
+  }
+  .sectionForm {
+    padding: 40px 10px; 
+  }
+  .sectionFormContent {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    gap: 40px;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 0px;
+  }
+  .titleContent{
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .sectionFormTitle {
+    padding: 0px;
+    height: 250px;
+    gap: 20px;
+  }
+  /*медиа для 2 секции*/
+  .classCard {
+    grid-template-columns: repeat(1, 2fr);
+  }
+  .yogaProgram {
+    display: flex;
+    width: 300px;
+    text-align: center;
+  }
+  /*медіа для третьої*/
+  .image-wrapper {
+    flex-basis: 50%;
+  }
+  /*медиа для слайдера*/
+  .aboutUs {
+    flex-direction: column;
+    padding: 0;
+  }
+  .aboutText {
+    padding: 40px 20px 20px;
+  }
+  .slider {
+    padding: 20px 30px;
+  }
+  /*медиа для инфо-лист*/
+  .infoList {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+  /*media sectiomCard*/
+  .cardList {
+    flex-direction: column;
+  }
+}
+
+/* Стилі для дуже маленьких екранів (максимум 575 пікселів) */
+@media (max-width: 570px) { 
+  .programSection {
+    padding: 50px 15px;
+  }
+  .programCard {
+    grid-template-columns: 1fr;
+  }
+  .classCard {
+    max-width: 340px;
+  }
+  .infoSection {
+    padding: 50px 15px;
+  } 
+  .infoList {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .card {
+    max-width: 360px;
+  }
+  .cardHeader {
+    padding: 25px;
+    justify-content: normal;
+  }
+  .cardHeader h5 {
+    font-size: 50px;
+  }
+  .cardContent {
+    padding: 50px 28px;
+  }
+  .footerWrapper {
+    height: 580px;
+    padding: 50px 15px;
+  }
+  .icons {
+    visibility: hidden;
+  }
+  .footerFooter p, .contactUs {
+    display: none;
+  }
+  .aboutFooter p > span {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
+}
